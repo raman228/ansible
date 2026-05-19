@@ -8,9 +8,15 @@
       state: present
 
   - name: start nginx
-    ansible.builtin.service:
+    #ansible.builtin.service: # this is legacy 
+    ansible.builtin.systemd:  # use this now i gooogled
       name: nginx
       state: started
       enable: yes
 
-      
+  # - name: start nginx
+  # ansible.builtin.systemd:
+  #  name: nginx
+  #  state: started
+  # enabled: yes
+

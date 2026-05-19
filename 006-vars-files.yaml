@@ -1,0 +1,11 @@
+- name: variables from files
+  hosts: local
+  collections: local
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: print couse info
+    ansible.builtin.debug:
+      meg: "Couse Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer}}"
+
+    
