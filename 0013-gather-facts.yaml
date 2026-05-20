@@ -1,0 +1,12 @@
+- name: gather facts
+  hosts: local
+  connection: local
+  # ansible collects th info of target server, before it excutes any other fact
+  tasks: 
+  - name: facts
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
+
+      # dump ouput around 1000 lines e.g IP OS details etc.
+
+      
