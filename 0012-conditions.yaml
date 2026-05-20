@@ -9,4 +9,11 @@
       msg: "Given number {{ number }} is less than 10"
     when: number < 10
 
-    
+    ### if number is less than 10 it will give out put message 
+    #TASK [check number is less than 10 or not] **************************************************************************************************************************************************
+#ok: [44.202.50.59] => {
+    #"msg": "Given number 8 is less than 10"
+#}
+
+# e.g i given number is 8 so a bove output got.
+
