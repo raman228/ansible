@@ -2,6 +2,6 @@
   hosts: local
   collection: local
   tasks:
-  - name: print couse info
+  - name: print cousre info
     ansible.builtin.debug:
-      meg: "Couse Name is: {{ COURSE }}, Duration: {{ DURATION}}, Trainer:  {{ TRAINER }}"
+      msg: "Couse Name is: {{ COURSE }}, Duration: {{ DURATION}}, Trainer:  {{ TRAINER }}"
